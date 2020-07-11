@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col-md-8">
+        <div class="section-title">
+            <a herf="#"><h2>Latest recipes </h2></a>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="recipe-view" >
+            <i *ngFor="let k of kategorije" class="{{k.icon}}"><a [routerLink]="['/post', k.naziv]">{{k.naziv}}</a></i>
+          
+        </div>
+    </div>
+</div>

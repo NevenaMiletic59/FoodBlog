@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "BlogZare"
+    }
+  },
+  "defaultProject": "BlogZare",
+  "cli": {
+    "analytics": "de4f4379-3dd4-47ca-b28e-64ec9d4782ff"
+  }
 }

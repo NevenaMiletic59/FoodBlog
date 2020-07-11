@@ -1,0 +1,76 @@
+<!-- Hero section -->
+<section class="page-top-section set-bg" style="background-image:url('assets/img/page-top-bg.jpg') ;" data-setbg="img/page-top-bg.jpg">
+    <div class="container">
+        <h2>Contact</h2>
+    </div>
+</section>
+<!-- Hero section end -->
+
+
+
+<!-- Search section end -->
+
+<section class="contact-section spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="contact-form-warp">
+                    <h4>Leave a comment</h4>
+                    <form class="form-contact contact_form" (ngSubmit)="onSubmit()"  [formGroup]="contactForm" name="sentMessage" id="contactForm" >
+                        <div class="row">
+                            <div class="col-md-6">
+                                <input  type="text" placeholder="Name" #fullName type="text" name="name" id="name" formControlName="fullName" class="form-control valid">
+                                <p *ngIf="!contactForm.get('fullName').valid && contactForm.get('fullName').touched">Name is required</p>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" placeholder="E-mail" #email  name="emaill" id="email" formControlName="email" class="form-control valid" placeholder="Email Address" id="email" >
+                                <p class="help-block text-danger"  *ngIf="!contactForm.get('email').valid && contactForm.get('email').touched">Pleas enter valid email</p>
+                            </div>
+                            <div class="col-md-12">
+                             
+                                <textarea placeholder="Message" name="mesage" id="message" #message rows="5" minlength="6"  formControlName="message" class="form-control valid" placeholder="Message" id="message" ></textarea>
+                                <p class="help-block text-danger" *ngIf="!contactForm.get('message').valid && contactForm.get('message').touched" >Text must have min 4 character </p>
+                                <button class="site-btn  " id="sendMessageButton" [disabled]="!contactForm.valid">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="contact-logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="contact-info">
+                    <ul class="ct-list">
+                        <li>
+                            <h6>Address:</h6>
+                            <p>481 Creekside Lane Avila</p>
+                            <p>Beach, CA 93424</p>
+                        </li>
+                        <li>
+                            <h6>Phone:</h6>
+                            <p>+53 345 7953 32453</p>
+                            <p>+53 345 7557 822112</p>
+                        </li>
+                        <li>
+                            <h6>Email:</h6>
+                            <p>yourmail@gmail.com</p>
+                        </li>
+                    </ul>
+                    <div class="contact-social">
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="#"><i class="fa fa-behance"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- map -->
+        <div class="location-map" id="map-canvas">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11617.329007020331!2d-107.6413542202505!3d43.28636328439792!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875f1507ef4569fb%3A0x376e806469cfbc75!2zTG9zdCBDYWJpbiwg0JLQsNGY0L7QvNC40L3QsyA4MjY0Miwg0KHRmNC10LTQuNGa0LXQvdC1INCU0YDQttCw0LLQtQ!5e0!3m2!1ssr!2srs!4v1594377486579!5m2!1ssr!2srs" width="1150" height="578" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>	
+    </div>
+</section>

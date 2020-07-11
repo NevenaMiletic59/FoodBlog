@@ -1,0 +1,23 @@
+[
+    {
+        "id":1,
+        "naziv":"Home",
+        "href":"/"
+    },
+    {
+        "id":1,
+        "naziv":"About",
+        "href":"/about"
+    },
+    {
+        "id":1,
+        "naziv":"Recipes",
+        "href":"/recipes"
+    },
+    {
+        "id":1,
+        "naziv":"Contact",
+        "href":"/contact"
+    }
+
+]

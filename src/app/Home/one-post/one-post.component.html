@@ -1,0 +1,81 @@
+
+
+	<!-- Hero section -->
+	<section class="page-top-section set-bg" style="background-image: url('assets/img/page-top-bg.jpg')">
+		<div class="container">
+			<h2>Recipe</h2>
+		</div>
+	</section>
+	<!-- Hero section end -->
+
+
+	<!-- Search section -->
+	<div class="search-form-section">
+		<div class="sf-warp">
+			
+		</div>
+	</div>
+	<!-- Search section end -->
+
+	
+    <!-- Recipe big view -->
+    
+	<div class="recipe-view-section" *ngIf="post">
+        <div class="rv-warp set-bg"  style="background-image: url('{{post.Slika}}');background-size: auto;">
+        </div>
+	</div>
+
+	<!-- Recipe details section -->
+	<section class="recipe-details-section">
+		<div class="container">
+			<div class="recipe-meta">
+				<div class="racipe-cata">
+					<span>For Begginers</span>
+				</div>
+				<h2>{{post.Naziv}}</h2>
+				<div class="recipe-date">{{post.Datum | date:'dd/MM/y'}}</div>
+				
+			</div>
+			<div class="row">
+				<div class="col-lg-5">
+					<div class="recipe-filter-warp">
+						<div class="filter-top">
+							<div class="filter-top-text">
+								<p>Prep:{{post.priprema}}</p>
+								<p>Cook: {{post.kuvanje}}</p>
+								<p>Yields: {{post.posluzivanje}}</p>
+							</div>
+						</div>
+						<!-- recipe filter form -->
+						<div class="filter-form-warp">
+							<h2>Ingredients</h2>
+							<form class="filter-form">
+								<div class="check-warp" *ngFor="let s of sastojci">
+									<input type="checkbox" id="one">
+									<label for="one">{{s}}</label>
+								</div>
+							
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-7">
+					<ul class="recipe-info-list">
+						<li>
+						
+							<p>{{post.Tekst}}</p>
+						</li>
+					
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Recipe details section end -->
+
+
+	<!-- Comment section -->
+	<app-comment></app-comment>
+	<!-- Comment section -->
+
+

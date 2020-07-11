@@ -1,0 +1,34 @@
+<section class="comment-section spad pt-0">
+   <h2 style="text-align:center">Comments</h2>
+        <div class="col-lg-7 col-md-10 mx-auto">
+            
+          <ul>
+           
+            <li @fade  *ngFor="let item of items">{{item}}
+                <span (clik)="RemoveItem(item)"></span>
+            </li>
+            
+          </ul>
+         
+       <form name="sentMessage" id="contactForm" novalidate>
+            
+            <div class="control-group">
+              <div class="form-group floating-label-form-group controls">
+                <label></label>
+                <textarea  [(ngModel)]="messages" [ngModelOptions]="{standalone:
+                  true}" rows="5" class="form-control" placeholder="Comment" id="message" required data-validation-required-message="Please enter a comment."></textarea>
+                <p class="help-block text-danger"></p>
+              </div>
+            </div>
+            <br>
+            <div id="success"></div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary" id="sendMessageButton" (click)="pushItem()"  [disabled]="messages===''">Send</button>
+            </div>
+          </form>
+          
+          <br>
+         
+        </div>
+   
+</section>

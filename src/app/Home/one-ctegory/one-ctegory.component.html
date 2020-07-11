@@ -1,0 +1,27 @@
+<router-outlet></router-outlet>
+<section class="recipes-page spad">
+    <div class="container">
+        <app-categories></app-categories>
+<div class="row">
+    <div class="col-lg-4 col-md-6" *ngFor="let po of post">
+        <div class="recipe">
+            <img src="{{po.Slika}}" alt="">
+            <div class="recipe-info-warp">
+                <div class="recipe-info">
+                    <h3>{{po.Naziv}}</h3>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star is-fade"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+</div>
+
+</div>
+</section>

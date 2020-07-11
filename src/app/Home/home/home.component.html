@@ -1,0 +1,184 @@
+<router-outlet></router-outlet>
+
+
+    <!-- Hero section -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/slider-bg-1.jpg" alt="Los Angeles" width="1100" height="500">
+            <div class="carousel-caption">
+                <div class="hs-text">
+					<h2 class="hs-title-1"><span>Healthy Recipes</span></h2>
+					<h2 class="hs-title-2"><span>from the best chefs</span></h2>
+					<h2 class="hs-title-3"><span>for all the foodies</span></h2>
+				</div>
+            </div>   
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/slider-bg-2.jpg" alt="Chicago" width="1100" height="500">
+            <div class="carousel-caption">
+                <div class="hs-text">
+                <h2 class="hs-title-1"><span>Healthy Recipes</span></h2>
+                <h2 class="hs-title-2"><span>from the best chefs</span></h2>
+                <h2 class="hs-title-3"><span>for all the foodies</span></h2>
+                </div>
+            </div>   
+          </div>
+         
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+
+
+
+	<!-- Hero section end -->
+
+
+	<!-- Add section end -->
+
+	<!-- Add section end -->
+
+
+	<!-- Recipes section -->
+	<section class="recipes-section spad pt-0">
+		<div class="container">
+			<div class="header-search col-lg-3">
+				<input type="text" [(ngModel)]="search" placeholder="Seaarch">
+				<a href="#"><i class="fa fa-search"></i></a>
+			</div>
+			<div class="row">
+			<div class="section-title">
+				<h2>Latest recipes</h2>
+				
+				
+			</div>
+		</div>
+			
+			
+			
+			
+			<div class="row" >
+			
+				<div class="col-lg-4 col-md-6" *ngFor="let po of post | filterPipe:search">
+					<div class="recipe">
+						<img src="{{po.Slika}}" alt="">
+						<div class="recipe-info-warp">
+							<div class="recipe-info">
+								<h3>{{po.Naziv | uppercase}}</h3>
+								<div class="rating">
+								
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+	<!-- Recipes section end -->
+
+
+	<!-- Footer widgets section -->
+	<section class="bottom-widgets-section spad">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6 ftw-warp" >
+					<div class="section-title">
+						<h3>Dinner</h3>
+					</div>
+					<ul class="sp-recipes-list" *ngFor="let po of post ">
+						<li *ngIf="po.Kategorija =='Dinner'">
+                            <div class="rl-thumb set-bg" data-setbg="assets/img/thumb/1.jpg">
+                            <img src="{{po.Slika}}"/>
+                            </div>
+							<div class="rl-info">
+								<span>{{po.Datum | date:'dd/MM/y' }}</span>
+								<h6>{{po.Naziv | uppercase}}</h6>
+								<div class="rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star is-fade"></i>
+								</div>
+							</div>
+						</li>
+					
+					</ul>
+				</div>
+				<div class="col-lg-4 col-md-6 ftw-warp" >
+					<div class="section-title">
+						<h3>Lunch</h3>
+					</div>
+					<ul class="sp-recipes-list" *ngFor="let po of post ">
+						<li *ngIf="po.Kategorija =='Lunch'">
+                            <div class="rl-thumb set-bg" data-setbg="assets/img/thumb/1.jpg">
+                            <img src="{{po.Slika}}"/>
+                            </div>
+							<div class="rl-info">
+								<span>{{po.Datum | date:'dd/MM/y' }}</span>
+								<h6>{{po.Naziv | uppercase}}</h6>
+								<div class="rating">
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star"></i>
+									<i class="fa fa-star is-fade"></i>
+								</div>
+							</div>
+						</li>
+					
+					</ul>
+				</div>
+				<div class="col-lg-4">
+					<div class="sp-blog-item">
+						<div class="blog-thubm">
+							<img src="assets/img/blog/1.jpg" alt="">
+							<div class="blog-date">
+								<span>May 04, 2018</span>
+							</div>
+						</div>
+						<div class="blog-text">
+							<h5>Italian restaurant Review</h5>
+							<span>By Maria Williams</span>
+							<p>Donec quam felis, ultricies nec, pellente sque eu, pretium quis, sem. Nulla conseq uat massa quis enim. </p>
+							<a href="#" class="comment">2 Comments</a>
+							<a href="#" class="readmore"><i class="fa fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Footer widgets section end -->
+
+
+	<!-- Review section end -->
+
+	<!-- Review section end -->
+
+
+	<!-- Gallery section -->
+	<div class="gallery">
+		<div class="owl-carousel" id="owl-demo">
+            <div class="item"><img  class="lazyOwl" src="assets/img/instagram/1.jpg" alt="Owl Image"></div>
+            <div class="item"><img class="lazyOwl" src="assets/img/instagram/2.jpg" alt="Owl Image"></div>
+            <div class="item"><img class="lazyOwl" src="assets/img/instagram/3.jpg" alt="Owl Image"></div>
+            <div class="item"><img class="lazyOwl" src="assets/img/instagram/4.jpg" alt="Owl Image"></div>
+            <div class="item"><img class="lazyOwl" src="assets/img/instagram/5.jpg" alt="Owl Image"></div>
+            <div class="item"><img class="lazyOwl" src="assets/img/instagram/6.jpg" alt="Owl Image"></div>
+          
+		</div>
+	</div>
+	<!-- Gallery section end -->

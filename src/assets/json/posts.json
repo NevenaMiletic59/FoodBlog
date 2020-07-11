@@ -1,0 +1,99 @@
+[
+    {
+        "Id":1,
+        "Naziv":"Traditional Pizza",
+        "Tekst":"Pizza has been a staple of Italian heritage and culture dating back to the 16th century. From there, it permeated the world, interpreted and served in a variety of ways and enjoyed by nearly everyone. ",
+        "Korisnik":"Jesifer Albert",
+        "Datum":"on September 24, 2019",
+        "Kategorija":"Dinner",
+        "Slika":"assets/img/recipes/1.jpg",
+        "zvezdice":"4",
+        
+              "priprema":"15 mins",
+              "kuvanje":"30 mins",
+              "posluzivanje":"8 Servings",
+              "sastojci":"4 Tbsp (57 gr) butter ,2 large eggs, 2 yogurt containers granulated sugar,1 vanilla or plain yogurt, 170g container,White flour,1.5 yogurt containers milk, 1/4 tsp cinnamon,1 cup fresh blueberries"
+          
+
+        
+    },
+    {
+        "Id":2,
+        "Naziv":"Italian home-made pasta",     
+        "Tekst":"This homemade pasta dough is made from scratch by hand or with your stand mixer and requires just four ingredients: eggs, flour, olive oil, and salt. Pasta that’s Italian through and through and yet easy to make. Here’s how.",
+        "Korisnik":"Mike Jonson",
+        "Datum":"on Octobar 03, 2019",
+        "Kategorija":"Dinner",
+        "Slika":"assets/img/recipes/2.jpg",
+        "zvezdice":"2",
+                "priprema":"20 mins",
+                "kuvanje":"40 mins",
+                "posluzivanje":"5 Servings",
+                "sastojci":"4 Tbsp (57 gr) butter ,2 large eggs, 2 yogurt containers granulated sugar,1 vanilla or plain yogurt, 170g container,White flour,1.5 yogurt containers milk, 1/4 tsp cinnamon,1 cup fresh blueberries"
+           
+    },
+    {
+        "Id":3,
+        "Naziv":"Chesse Cake Tart",
+        "Tekst":"Bake the tart crust for 15 to 20 minutes, until lightly browned around the edges. Remove from the oven. ",
+        "Korisnik":"Jenuy Milbert",
+        "Datum":"on May 15, 2019",
+        "Kategorija":"Lunch",
+        "Slika":"assets/img/recipes/3.jpg",
+        "zvezdice":"5",
+                "priprema":"5 mins",
+                "kuvanje":"10 mins",
+                "posluzivanje":"3 Servings",
+                "sastojci":"4 Tbsp (57 gr) butter ,2 large eggs, 2 yogurt containers granulated sugar,1 vanilla or plain yogurt, 170g container,White flour,1.5 yogurt containers milk, 1/4 tsp cinnamon,1 cup fresh blueberries"
+
+           
+    },
+    {
+        "Id":4,
+        "Naziv":"Tartar Sauce And Pasta",
+        "Tekst":"This macaroni salad tastes just like the ones you buy at the local grocery store. Only difference is, it's cheaper to make yourself, and you can make as much as you need.",
+        "Korisnik":"Melany Stuff",
+        "Datum":"on Aprile 10, 2019",
+        "Kategorija":"Breakfast",
+        "Slika":"assets/img/recipes/4.jpg",
+        "zvezdice":"3",
+                "priprema":"18 mins",
+                "kuvanje":"20 mins",
+                "posluzivanje":"6 Servings",
+                "sastojci":"4 Tbsp (57 gr) butter ,2 large eggs, 2 yogurt containers granulated sugar,1 vanilla or plain yogurt, 170g container,White flour,1.5 yogurt containers milk, 1/4 tsp cinnamon,1 cup fresh blueberries"
+           
+    },
+    {
+        "Id":5,
+        "Naziv":"White cake",
+        "Tekst":"Today I’m so excited to be sharing the very best white cake recipe! This recipe yields a fluffy, snow-white cake that’s light and soft but still sturdy enough to stack or cover with fondant. Read on for plenty of tips for making the perfect white cake, completely from scratch!",
+        "Korisnik":"Melany Stuff",
+        "Datum":"on Aprile 10, 2019",
+        "Kategorija":"Lunch",
+        "Slika":"assets/img/recipes/5.jpg",
+        "zvezdice":"4",
+          "priprema":"20 mins",
+                "kuvanje":"5 mins",
+                "posluzivanje":"10 Servings",
+                "sastojci":"4 Tbsp (57 gr) butter ,2 large eggs, 2 yogurt containers granulated sugar,1 vanilla or plain yogurt, 170g container,White flour,1.5 yogurt containers milk, 1/4 tsp cinnamon,1 cup fresh blueberries"
+          
+    },
+    {
+        "Id":6,
+        "Naziv":"VEGETABLE BREAKFAST SCRAMBLES ",
+        "Tekst":"Many of my day to day meals are just a hodgepodge of random ingredients that I find in my fridge all thrown into a bowl or a wrap. ",
+        "Korisnik":"Mike Jonson",
+        "Datum":"on Aprile 10, 2019",
+        "Kategorija":"Breakfast",
+        "Slika":"assets/img/recipes/6.jpg",
+        "zvezdice":"5",
+                "priprema":"20 mins",
+                "kuvanje":"40 mins",
+                "posluzivanje":"5 Servings",
+                "sastojci":"4 Tbsp (57 gr) butter ,2 large eggs, 2 yogurt containers granulated sugar,1 vanilla or plain yogurt, 170g container,White flour,1.5 yogurt containers milk, 1/4 tsp cinnamon,1 cup fresh blueberries"
+           
+    
+    }
+  
+
+]

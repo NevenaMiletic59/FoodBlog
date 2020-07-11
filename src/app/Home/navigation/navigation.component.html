@@ -1,0 +1,19 @@
+<router-outlet></router-outlet>
+<div class="header-bottom">
+    <div class="container">
+        <a routerLink="" class="site-logo">
+            <img src="assets/img/logo.png" alt="">
+        </a>
+        <div class="nav-switch">
+            <i class="fa fa-bars"></i>
+        </div>
+        <div class="header-search">
+      
+        </div>
+        <ul class="main-menu">
+            <li *ngFor="let m of meni"><a routerLink="{{m.href}}">{{m.naziv}}</a></li>
+           
+        </ul>
+    </div>
+</div>
+
