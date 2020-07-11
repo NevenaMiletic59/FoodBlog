@@ -12,7 +12,9 @@ import { HttpClient } from '@angular/common/http';
 export class OneCtegoryComponent implements OnInit {
 naziv;
   posts;
-post;
+posto;
+postovi;
+
   
   constructor(private service: PostsServiceService,private route:  ActivatedRoute, private http:HttpClient) {
 
@@ -22,23 +24,25 @@ this.naziv=this.route.snapshot.params['naziv'];
    }
 
   ngOnInit() {
+    this.dohvati();
+   
 
-
- this.service.dohvatiPostove().subscribe(
-   Response=>{
-     this.posts=Response; 
-     for(let i=0; i<this.posts.length;i++){
-     this.post=this.posts.filter(n=>n.Kategorija == this.naziv);
-console.log(this.post);     
-break;
-       
-     }
-   }
- ,
- error => {
-  console.log(error);
-}
- );
   }
-
+  dohvati(){
+    this.service.dohvatiPostove().subscribe(
+      Response=>{
+        this.posts=Response; 
+        for(let i=0; i<this.posts.length;i++){
+        this.posto=this.posts.filter(n=>n.Kategorija == this.naziv);
+   console.log(this.posto);     
+   break;
+          
+        }
+      }
+    ,
+    error => {
+     console.log(error);
+   }
+    );
+  }
 }

@@ -1,9 +1,15 @@
 <router-outlet></router-outlet>
+	<!-- Hero section -->
+	<section class="page-top-section set-bg" style="background-image:url('assets/img/page-top-bg.jpg') ;"  data-setbg="assets/img/page-top-bg.jpg">
+		<div class="container">
+			<h2>Recipe</h2>
+		</div>
+	</section>
 <section class="recipes-page spad">
     <div class="container">
         <app-categories></app-categories>
 <div class="row">
-    <div class="col-lg-4 col-md-6" *ngFor="let po of post">
+    <div class="col-lg-4 col-md-6" *ngFor="let po of posto">
         <div class="recipe">
             <img src="{{po.Slika}}" alt="">
             <div class="recipe-info-warp">
